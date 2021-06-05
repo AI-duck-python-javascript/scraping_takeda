@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/cgi-bin/double.py" method="POST" >
+        <a>↓取得する最初ページ番号を入力（半角数字）</a><br>
+        <input type="text" name="first_num" required pattern="[1-9]|[1-5][0-6]" title="半角数字で入力してください。もしくはないページを取得しようとしています。">
+        <br>
+        <a>↓取得する最終ページ番号を入力（半角数字）</a><br>
+        <input type="text" name="last_num" required pattern="[1-9]|[1-5][0-6]" title="半角数字で入力してください。もしくはないページを取得しようとしています。">
+        <br>
+        <input type="submit" Value="Click & Get data">
+    </form>
+</html>
